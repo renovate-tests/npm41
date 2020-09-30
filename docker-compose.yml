@@ -1,0 +1,6 @@
+version: '2.2'
+# internal version: 1
+services:
+  base:
+    image: node:12.6.0
+    
