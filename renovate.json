@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "dependencyDashboardApproval": true,
+  "packageRules": [{
+    "packageNames": ["*"],
+    "commitMessageExtra": "from {{currentVersion}} to {{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{toVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}",
+    "commitMessageSuffix": "({{packageFile}})"
+  }],
+  "recreateClosed": true
+}
